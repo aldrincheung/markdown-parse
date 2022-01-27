@@ -33,9 +33,6 @@ public class MarkdownParse {
             }
 
             //if brackets aren't complete
-            if(nextOpenBracket == -1 || openParen == -1) break;
-            if(nextCloseBracket == -1 || closeParen == -1) continue;
-            if(openParen != nextCloseBracket + 1) continue;
 
             toReturn.add(markdown.substring(openParen + 1, closeParen));
             currentIndex = closeParen + 1;
