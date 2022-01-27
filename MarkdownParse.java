@@ -28,22 +28,16 @@ public class MarkdownParse {
 
             int lastBracket = markdown.indexOf(")", closeParen+1);
             nextNewline = markdown.indexOf("\n", lastBracket); // -1
-            if(lastBracket != -1 && lastBracket<nextNewline || nextNewline == -1){
+            if(lastBracket != -1 && lastBracket<nextNewline){
                 closeParen = lastBracket;
-            }
-            if(closeParen>nextNewline && nextNewline != -1){
-                closeParen = -1;
             }
 
             //if brackets aren't complete
-            currentIndex++;
             if(nextOpenBracket == -1 || openParen == -1) break;
             if(nextCloseBracket == -1 || closeParen == -1) continue;
             if(openParen != nextCloseBracket + 1) continue;
 
-            if(openParen + 1 < markdown.length() && closeParen <= markdown.length() && closeParen >= openParen + 1){
-                toReturn.add(markdown.substring(openParen + 1, closeParen));
-            }
+            toReturn.add(markdown.substring(openParen + 1, closeParen));
             currentIndex = closeParen + 1;
         }
         return toReturn;
