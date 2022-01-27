@@ -108,5 +108,17 @@ public class MarkdownParseTest {
         }
         assertEquals(List.of("a link on the first line"), MarkdownParse.getLinks(contents));
     }
+
+    @Test
+    public void test9(){
+        Path filename = Path.of("C:/Users/aldri/Desktop/classes/CSE_15L/github/markdown-parse/error-inducing.md");
+        String contents = "";
+        try {
+            contents = Files.readString(filename);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        assertEquals(List.of("asdf", "https://www.google.com/search?q=what+is+(sdf)+asdf"), MarkdownParse.getLinks(contents));
+    }
     
 }
