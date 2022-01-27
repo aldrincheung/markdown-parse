@@ -31,6 +31,10 @@ public class MarkdownParse {
             if(lastBracket != -1 && lastBracket<nextNewline || nextNewline == -1){
                 closeParen = lastBracket;
             }
+            if(closeParen>markdown.indexOf("\n", openParen)){
+                currentIndex = markdown.indexOf("\n", openParen) + 1;
+                continue;
+            }
 
             //if brackets aren't complete
             currentIndex++;
