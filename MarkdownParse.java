@@ -27,8 +27,8 @@ public class MarkdownParse {
             }
 
             int lastBracket = markdown.indexOf(")", closeParen+1);
-            nextNewline = markdown.indexOf("\n", lastBracket); // -1
-            if(lastBracket != -1 && lastBracket<nextNewline || nextNewline == -1){
+            int nextNewline1 = markdown.indexOf("\n", lastBracket); // -1
+            if(lastBracket != -1 && lastBracket<nextNewline1 || nextNewline1 == -1){
                 closeParen = lastBracket;
             }
             if(closeParen>nextNewline && nextNewline != -1){
