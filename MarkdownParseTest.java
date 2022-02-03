@@ -15,7 +15,7 @@ public class MarkdownParseTest {
 
     @Test
     public void test1(){
-        Path filename = Path.of("C:/Users/aldri/Desktop/classes/CSE_15L/github/markdown-parse/test-file.md");
+        Path filename = Path.of("./test-file.md");
         String contents = "";
         try {
             contents = Files.readString(filename);
@@ -27,7 +27,7 @@ public class MarkdownParseTest {
 
     @Test
     public void test2(){
-        Path filename = Path.of("C:/Users/aldri/Desktop/classes/CSE_15L/github/markdown-parse/test-file2.md");
+        Path filename = Path.of("./test-file2.md");
         String contents = "";
         try {
             contents = Files.readString(filename);
@@ -39,7 +39,7 @@ public class MarkdownParseTest {
 
     @Test
     public void test3(){
-        Path filename = Path.of("C:/Users/aldri/Desktop/classes/CSE_15L/github/markdown-parse/test-file3.md");
+        Path filename = Path.of("./test-file3.md");
         String contents = "";
         try {
             contents = Files.readString(filename);
@@ -51,7 +51,7 @@ public class MarkdownParseTest {
 
     @Test
     public void test4(){
-        Path filename = Path.of("C:/Users/aldri/Desktop/classes/CSE_15L/github/markdown-parse/test-file4.md");
+        Path filename = Path.of("./test-file4.md");
         String contents = "";
         try {
             contents = Files.readString(filename);
@@ -63,7 +63,7 @@ public class MarkdownParseTest {
 
     @Test
     public void test5(){
-        Path filename = Path.of("C:/Users/aldri/Desktop/classes/CSE_15L/github/markdown-parse/test-file5.md");
+        Path filename = Path.of("./test-file5.md");
         String contents = "";
         try {
             contents = Files.readString(filename);
@@ -75,7 +75,7 @@ public class MarkdownParseTest {
 
     @Test
     public void test6(){
-        Path filename = Path.of("C:/Users/aldri/Desktop/classes/CSE_15L/github/markdown-parse/test-file6.md");
+        Path filename = Path.of("./test-file6.md");
         String contents = "";
         try {
             contents = Files.readString(filename);
@@ -87,7 +87,7 @@ public class MarkdownParseTest {
 
     @Test
     public void test7(){
-        Path filename = Path.of("C:/Users/aldri/Desktop/classes/CSE_15L/github/markdown-parse/test-file7.md");
+        Path filename = Path.of("./test-file7.md");
         String contents = "";
         try {
             contents = Files.readString(filename);
@@ -99,7 +99,7 @@ public class MarkdownParseTest {
 
     @Test
     public void test8(){
-        Path filename = Path.of("C:/Users/aldri/Desktop/classes/CSE_15L/github/markdown-parse/test-file8.md");
+        Path filename = Path.of("./test-file8.md");
         String contents = "";
         try {
             contents = Files.readString(filename);
@@ -111,7 +111,7 @@ public class MarkdownParseTest {
 
     @Test
     public void test9(){
-        Path filename = Path.of("C:/Users/aldri/Desktop/classes/CSE_15L/github/markdown-parse/error-inducing.md");
+        Path filename = Path.of("./error-inducing.md");
         String contents = "";
         try {
             contents = Files.readString(filename);
